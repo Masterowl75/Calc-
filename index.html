@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPEhtml>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,11 +6,14 @@
     <title>Calculator</title>
     <link rel="stylesheet" href="calculator.css">
 </head>
+<script>
+    let ans = 0
+</script>
 <body>
     <div class="calculator">
         <input type="text" id="display" readonly>
         <div class="buttons">
-            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="ans += 7; document.getElementById('display').innerHTML = ans;">7</button>
             <button onclick="appendToDisplay('8')">8</button>
             <button onclick="appendToDisplay('9')">9</button>
             <button onclick="appendToDisplay('+')">+</button>
